@@ -21,6 +21,7 @@ def palindrome(s):
             rev = s[j] + rev
             if (rev == nor):
                 pal_set.add(nor)
+    return len(pal_set)
 #another apporach
 def palindrome_second(s):
     sub_strs = set([s[x:y] for x, y in combinations(
