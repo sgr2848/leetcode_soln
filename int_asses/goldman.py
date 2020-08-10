@@ -9,6 +9,7 @@ def balancedSum(arr):
             return i
         current_ += arr[i]
     return 0
+    
 # find the total number of unique palindrome sub-string in a given string
 # ex : for string mokkori, the output should be 7
 # explanation : [m,o,k,r,i,kk,okko]
