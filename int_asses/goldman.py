@@ -9,7 +9,7 @@ def balancedSum(arr):
             return i
         current_ += arr[i]
     return 0
-    
+print(balancedSum([1,2,3,1,6]))
 # find the total number of unique palindrome sub-string in a given string
 # ex : for string mokkori, the output should be 7
 # explanation : [m,o,k,r,i,kk,okko]
@@ -22,7 +22,9 @@ def palindrome(s):
             rev = s[j] + rev
             if (rev == nor):
                 pal_set.add(nor)
+    print(pal_set)
     return len(pal_set)
+palindrome("mokkori")
 #another apporach
 def palindrome_second(s):
     sub_strs = set([s[x:y] for x, y in combinations(
